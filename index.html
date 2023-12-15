@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Agenda Contatos</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="script/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1> 
+            Meus Contatos
+        </h1>
+    </header>
+    <main>
+        <div class="title">
+            <h2>
+                Contatos
+                <img src="./imagens/phone-call.png" alt="imagem telefone">
+            </h2>
+        </div>
+
+        <div class="card">
+
+            <div class="lineInput">
+                <label>Nome</label>
+                <input type="text" name="" id="contato" placeholder="Nome do contato">
+            </div>
+
+            <div class="lineInput">
+                <label>Número de contato</label>
+                <input type="number" name="" id="numcontato" placeholder="(11) 12345-1234">
+            </div>
+
+            <button id="btn1" onclick="contato.salvar()"> Salvar </button>
+
+            <button onclick="contato.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="conteudo">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Contato</th>
+                    <th>Número para contato</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    
+</body>
+</html>
