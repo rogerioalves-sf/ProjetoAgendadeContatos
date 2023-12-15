@@ -85,3 +85,10 @@ table td img {
 img {
     width: 18px;
 }
+
+footer {
+    text-align: center;
+    background-color: rgb(101, 106, 147);
+    padding: 10px;
+    height: 100%;
+}
